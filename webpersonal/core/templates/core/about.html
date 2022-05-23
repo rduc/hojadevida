@@ -1,0 +1,42 @@
+{% extends 'core/base.html' %}
+{% load static %}
+
+{% block title %}Acerca de{% endblock %}
+
+{% block background %}{% static 'core/img/about-bg.jpg' %}{% endblock %}
+
+{% block headers %}
+    <h1>Acerca de</h1>
+    <span class="subheading">Biografía</span>
+{% endblock %}
+
+{% block content %}
+<div class="row"> 
+    <div class="col-lg-3 col-md-4 offset-lg-1">
+        <img class="img-fluid avatar" 
+            src="{% static 'core/img/avatar2.jpg' %}" alt="">
+    </div>
+        <div class="col-lg-7 col-md-8">
+            <h2 class="section-heading">Rafael David Uribe Canónigo</h2>   
+            <p align="justify"> Doctor en Educacion Universidad Pedagogica El 
+                Libertador (UPEL, VEN); Magister en e-learning 
+                Educacion Virtual, Universidad de la Rioja 
+                (UNIR,ESP); Especialista en Educacion con Nuevas
+                Tecnologias, Universidad Autonoma de Bucaramanga
+                (UNAB,COL); Profesional ingeniero de Sistemas, 
+                Universidad Antonio Nariño (UAN, COL). </p>
+                <details align="justify">
+                Hace 12 años me desempeño como Instructor
+                del SENA y en los ultimos 4, como Instructor Experto Sennova. 
+                He sido Docente de las universidades UDES y FESC, en la cual
+                desarrolle y sustente el programa de Ingenieria de Software, 
+                obteniendo el registro calificado. </p>
+                <p>Actualmente tengo el rol en centro CIES, de Lider del 
+                Modelo de Inteligencia Corporativa y Prospectiva del SENA, 
+                desarrollando junto al equipo PREVIOS, en otros productos, 
+                el Plan Tecnologico del centro.
+                </details>
+        </div>
+    </div>
+</div>
+{% endblock %}
